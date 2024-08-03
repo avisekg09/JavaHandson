@@ -12,12 +12,6 @@ public class MapBasics {
 		mobileModel.put("Iphone", "Iphone 15");
 		mobileModel.put("Realme", "Narzo series");
 		mobileModel.put("Sony", "Xperia Series");
-		
-		mobileModel.keySet()args.
-		
-		
-		
-		
 		mobileModel.forEach((t, u) -> System.out.println("Mobile Brand - "+t+ ", mobile Model"+u));
 
 	}
