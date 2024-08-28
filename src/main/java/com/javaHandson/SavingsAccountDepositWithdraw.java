@@ -1,4 +1,4 @@
-package com.ArrayListPractice;
+package com.javaHandson;
 
 public class SavingsAccountDepositWithdraw {
 

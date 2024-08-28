@@ -1,4 +1,4 @@
-package com.ArrayListPractice;
+package com.javaHandson;
 
 import java.util.Arrays;
 
@@ -8,7 +8,7 @@ public class SortArrays {
 		int [] arr = {5,3,9,8,2,20};
 		Arrays.sort(arr);
 		for(int i:arr) {
-			System.out.println(i);
+			System.out.print(i+" ");
 		}
 
 	}

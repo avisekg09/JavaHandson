@@ -1,4 +1,4 @@
-package com.ArrayListPractice;
+package com.javaHandson;
 
 import java.util.ArrayList;
 import java.util.Collections;
