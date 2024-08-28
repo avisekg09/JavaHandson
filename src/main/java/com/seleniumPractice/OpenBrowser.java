@@ -6,6 +6,7 @@ import com.sun.tools.javac.launcher.Main;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
+import java.util.List;
 import java.util.Scanner;
 
 import org.openqa.selenium.WebDriver;
@@ -31,11 +32,15 @@ public class OpenBrowser {
 		OpenBrowser ob = new OpenBrowser();
 		ob.Driver(broswerName).get("https://www.google.com");
 		driver.manage().deleteAllCookies();
-		org.openqa.selenium.Dimension d = new Dimension(500,400);
-		driver.manage().window().setSize(d);
-		Point p = new Point(50,500);
-		driver.manage().window().setPosition(p);
-		driver.navigate().refresh();
+		driver.manage().window().maximize();
+		driver.findElement(By.xpath("//textarea[@name='q']")).sendKeys("Selenium");
+		Thread.sleep(2000);
+		
+//		org.openqa.selenium.Dimension d = new Dimension(500,400);
+//		driver.manage().window().setSize(d);
+//		Point p = new Point(50,500);
+//		driver.manage().window().setPosition(p);
+//		driver.navigate().refresh();
 		
 	}
 	public WebDriver Driver(String browserName) {
