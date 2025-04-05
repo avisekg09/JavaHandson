@@ -1,5 +1,6 @@
 package com.InterfacesHandson;
 
-public interface Pet {
+public interface Pet extends Animal {
 
+	void play();
 }
